@@ -1,4 +1,3 @@
-#MP2
+Stormbreaker
 
-#MP2 is the chess engine that will be built in Python(and other languages if required), progress will take place soon...
-The Name will be announced on Ugadi at 8:09 am.
+Stormbreaker is the chess engine that will be built in Python(and other languages if required), progress will take place soon...
