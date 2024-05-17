@@ -7,7 +7,7 @@ class Board:
 
     @classmethod
     def draw(cls, screen):
-        colors = [pygame.Color(0, 0, 0), pygame.Color(255, 255, 255)]  # Black and white
+        colors = [pygame.Color(0, 0, 0), pygame.Color(255, 255, 255)] # 0 is Black and 1 is white
         for row in range(cls.size):
             for col in range(cls.size):
                 color = colors[(row + col) % 2]
