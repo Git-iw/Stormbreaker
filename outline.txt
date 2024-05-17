@@ -1,0 +1,8 @@
+chess_engine/
+    ├── engine.py        # Main entry point for the engine
+    ├── board.py         # Board representation and drawing
+    ├── move_generation.py  # Move generation logic
+    ├── evaluation.py    # Evaluation function
+    ├── search.py        # Search algorithms (e.g., Minimax, Alpha-Beta Pruning)
+    ├── utils.py         # Utility functions
+    ├── tests/           # Unit tests for different modules
