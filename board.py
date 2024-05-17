@@ -13,6 +13,10 @@ class Board:
                 color = colors[(row + col) % 2]
                 pygame.draw.rect(screen, color, pygame.Rect(col * cls.square_size, row * cls.square_size, cls.square_size, cls.square_size))
 
+class Piece:
+    def __init__(self):
+        ...
+
 def main():
     pygame.init()
     board_size = Board.size * Board.square_size
