@@ -3,7 +3,7 @@ import sys
 
 class Board:
     size = 8
-    square_size = 80  # Size of each square on the board
+    square_size = 80  
 
     @classmethod
     def draw(cls, screen):
