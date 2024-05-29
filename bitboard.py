@@ -17,7 +17,6 @@ class Bitboard:
 
 def main():
     bitboard = Bitboard(8)
-    bitboard.print_board()
 
 if __name__ == "__main__":
     main()
