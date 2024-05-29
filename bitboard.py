@@ -1,0 +1,6 @@
+class Bitboard:
+    def __init__(self, size):
+        ...
+
+    def set_square(self, row, col):
+        ...
