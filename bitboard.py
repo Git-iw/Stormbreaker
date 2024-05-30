@@ -47,3 +47,4 @@ if __name__ == "__main__":
     main()
     # Yes, I will stop camel case for most of the part.
     # I will start to use type annotations just for my understanding sake.
+    # This is just basic Bitboard, I will make more changes in the UI, pieces bitboard, use the functions in move_generation.py to print the move as I play etc.
