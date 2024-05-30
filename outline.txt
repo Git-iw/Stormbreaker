@@ -2,7 +2,7 @@ chess_engine/
     ├── engine.py        # Main entry point for the engine
     ├── board.py(optional if GUI is also needed, will delete the file later) # Board representation and drawing
     ├── bitboard.py      # Board representation in Bits using Bitboard method
-    ├── move_generation.py  # Move generation logic
+    ├── move_generation.py(optional because bitboard.py has the logic, I think this will be important when I am playing with it or in lichess)  # Move generation logic
     ├── evaluation.py    # Evaluation function
     ├── search.py        # Search algorithms (e.g., Minimax, Alpha-Beta Pruning)
     ├── utils.py         # Utility functions
