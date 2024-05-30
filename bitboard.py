@@ -47,3 +47,4 @@ if __name__ == "__main__":
     main()
     # Yes, I will stop camel case for most of the part.
     # I will start to use type annotations just for my understanding sake.
+    # have more plans on changes like in print_board function, advanced bitboard for pieces, and will use these functions in move_generation.py
