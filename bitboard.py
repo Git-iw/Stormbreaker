@@ -1,10 +1,12 @@
 class Bitboard:
-    def __init__(self, black_board=0, white_board=0): # Not requried to use type annotation as I know it
+    def __init__(self,piece: str ,black_board=0, white_board=0): # Not requried to use type annotation as I know it
         self.white_board = white_board 
         self.black_board = black_board
+        self.piece = piece
 
-    def set_bit(self, position: int, color: str):
+    def set_bit(self, position: int, color: str, piece: str):
         color = color.lower()
+        piece = piece.lower()
         if not (0 <= position <= 63):
             raise ValueError("Given bit is not within the board range!")
         if color == "black":
@@ -16,8 +18,9 @@ class Bitboard:
 
         # self.board |= 1 << position # The 1(bit) will be moved by the number given below in the main
     
-    def clear_bit(self, position: int, color: str):
+    def clear_bit(self, position: int, color: str, piece: str):
         color = color.lower()
+        piece = piece.lower()
         if not (0 <= position <= 63):
             raise ValueError("Given bit is not within the board range!")
 
@@ -32,8 +35,9 @@ class Bitboard:
             raise ValueError("Given color must be either black or white!")
         ...
     
-    def is_bit_set(self, position: int, color: str) -> bool: # As it will return either 0 or 1
+    def is_bit_set(self, position: int, color: str, piece: str) -> bool: # As it will return either 0 or 1
         color = color.lower()
+        piece = piece.lower()
         if not (0 <= position <= 63):
             raise ValueError("Given bit is not within the board range!")
 
@@ -48,7 +52,7 @@ class Bitboard:
 
     def print_board(self) -> None:
         """Prints a visual representation of the bitboard (for debugging)."""
-        # color = color.lower()
+        # piece implementation will start soon, so until then shanthi karo, it will work for sure.
         for rank in range(7, -1, -1):
             print(f"{rank + 1} ", end='')
             for file in range(8):
@@ -64,14 +68,16 @@ class Bitboard:
 
 def main():
     # These are just random positions in which bits are placed, nothing special.
-    bitboard = Bitboard()
-    bitboard.set_bit(0, "white")
-    bitboard.set_bit(63, "black")
-    bitboard.set_bit(53, "black")
-    bitboard.set_bit(10, "white")
-    bitboard.set_bit(43, "black")
-    bitboard.set_bit(20, "white")
-    bitboard.print_board()
+    # Commented out because piece implementation is still left.
+    # bitboard = Bitboard()
+    # bitboard.set_bit(0, "white")
+    # bitboard.set_bit(63, "black")
+    # bitboard.set_bit(53, "black")
+    # bitboard.set_bit(10, "white")
+    # bitboard.set_bit(43, "black")
+    # bitboard.set_bit(20, "white")
+    # bitboard.print_board()
+    ...
 
 if __name__ == "__main__":
     main()
