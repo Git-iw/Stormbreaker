@@ -41,8 +41,8 @@ def setup_board():
 def main():
     setup_board()
     # move input should be in a classic chess notation format.
-    # Take the move input from the user and print it immediately.
-    # logic to handle the move input given by user.
+    # logic to handle the move input given by user eg: conversion from notation to bitboard methods.
+    # Take that input from the user and print it immediately.
     ...
 
 if __name__ == "__main__":
