@@ -1,6 +1,6 @@
 # this file will not have the entire logic of search and eval, it will just have basic logic the main engine will have to end and start the game.
 
-from bitboard import Bitboard
+from engine_modules.bitboard import Bitboard
 
 def setup_board():
     bitboard = Bitboard()
