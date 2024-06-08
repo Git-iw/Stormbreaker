@@ -58,7 +58,6 @@ class Bitboard:
         print("  a b c d e f g h")
 
 def main():
-    # Example to set a rook at position 0
     bitboard = Bitboard()
     bitboard.set_bit(0, "white", "rook")
     bitboard.set_bit(1, "white", "knight")
