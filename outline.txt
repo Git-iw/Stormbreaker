@@ -1,9 +1,21 @@
 chess_engine/
-    ├── engine.py        # Main entry point for the engine
-    ├── board.py(optional if GUI is also needed, will delete the file later) # Board representation and drawing
-    ├── bitboard.py      # Board representation in Bits using Bitboard method
-    ├── move_generation.py(not optional, because after or before I implement the search and eval, I need a file so that I make moves and print it and same for the machine)  # Move generation logic
-    ├── evaluation.py    # Evaluation function
-    ├── search.py        # Search algorithms (e.g., Minimax, Alpha-Beta Pruning)
-    ├── utils.py         # Utility functions
-    ├── tests/           # Unit tests for different modules
+    ├── stormbreaker.py               # Main file to run the chess engine (will be re-implemented in C/C++ later)
+    ├── engine_functions/     # Directory for core chess engine functionalities
+    │   ├── __init__.py       # Makes the directory a package
+    │   ├── stormbreaker.py   # Combines all the search, eval, bitboard etc into one file (will be re-implemented in C/C++ later)
+    │   ├── bitboard.py       # Board representation in Bits using Bitboard method (will be re-implemented in C/C++ later)
+    │   ├── move_generation.py# Move generation logic (will be re-implemented in C/C++ later)
+    │   ├── evaluation.py     # Evaluation function (will be re-implemented in C/C++ later)
+    │   ├── search.py         # Search algorithms (e.g., Minimax, Alpha-Beta Pruning) (will be re-implemented in C/C++ later)
+    ├── utils/                # Directory for utility functions
+    │   ├── __init__.py       # Makes the directory a package
+    │   ├── utils.py          # Utility functions
+    ├── board.py              # Optional: Board representation and drawing (might be deleted if GUI not needed)
+    ├── tests/                # Directory for unit tests
+    │   ├── __init__.py       # Makes the directory a package
+    │   ├── test_bitboard.py  # Unit tests for bitboard module
+    │   ├── test_move_generation.py # Unit tests for move generation module
+    │   ├── test_evaluation.py# Unit tests for evaluation module
+    │   ├── test_search.py    # Unit tests for search module
+    │   ├── test_utils.py     # Unit tests for utils module
+
