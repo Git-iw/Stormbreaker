@@ -1,6 +1,6 @@
 chess_engine/
     ├── stormbreaker.py               # Main file to run the chess engine (will be re-implemented in C/C++ later)
-    ├── engine_functions/     # Directory for core chess engine functionalities
+    ├── engine_modules/     # Directory for core chess engine functionalities
     │   ├── __init__.py       # Makes the directory a package
     │   ├── stormbreaker.py   # Combines all the search, eval, bitboard etc into one file (will be re-implemented in C/C++ later)
     │   ├── bitboard.py       # Board representation in Bits using Bitboard method (will be re-implemented in C/C++ later)
