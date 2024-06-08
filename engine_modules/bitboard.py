@@ -58,23 +58,9 @@ class Bitboard:
         print("  a b c d e f g h")
 
 def main():
+    # Example to set a rook at position 0
     bitboard = Bitboard()
     bitboard.set_bit(0, "white", "rook")
-    bitboard.set_bit(1, "white", "knight")
-    bitboard.set_bit(2, "white", "bishop")
-    bitboard.set_bit(3, "white", "queen")
-    bitboard.set_bit(4, "white", "king")
-    bitboard.set_bit(5, "white", "bishop")
-    bitboard.set_bit(6, "white", "knight")
-    bitboard.set_bit(7, "white", "rook")
-    bitboard.set_bit(63, "black", "rook")
-    bitboard.set_bit(62, "black", "knight")
-    bitboard.set_bit(61, "black", "bishop")
-    bitboard.set_bit(60, "black", "king")
-    bitboard.set_bit(59, "black", "queen")
-    bitboard.set_bit(58, "black", "bishop")
-    bitboard.set_bit(57, "black", "knight")
-    bitboard.set_bit(56, "black", "rook")
     bitboard.print_board()
 
 if __name__ == "__main__":
