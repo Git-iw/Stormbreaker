@@ -2,7 +2,7 @@
 
 from bitboard import Bitboard
 
-def setup_board():
+def setup_board() -> None:
     bitboard = Bitboard()
     bitboard.set_bit(0, "white", "rook")
     bitboard.set_bit(1, "white", "knight")
